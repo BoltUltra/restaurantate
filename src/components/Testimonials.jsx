@@ -64,7 +64,7 @@ const TestimonialSlide = ({ item }) => {
   const imageSrc = useNextSanityImage(client, item.image);
 
   return (
-    <div className="bg-[#343942] text-white py-10 my-10 px-5 shadow">
+    <div className="bg-[#343942] text-white py-10 my-10 px-5 shadow" key={item.name}>
       <div className="flex items-center space-x-3 border-b border-b-[#797E89] py-3" key={item.name}>
         <div className="relative">
           <Image
