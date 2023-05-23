@@ -11,11 +11,11 @@ const Popular = ({ popularData }) => {
       <div className='text-center space-y-3'>
         <SubPageTitle title={'menu'} color={'background'} />
         <Heading3 title={'Popular Dishes'} />
-        <p className='font-josefin md:text-base text-sm md:px-64'>Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content making.</p>
+        <p className='font-josefin md:text-base text-sm md:px-64'>Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using &apos;Content here, content making.</p>
       </div>
       <div className='grid md:grid-cols-4 md:gap-10 gap-5 mt-5'>
         {popularData.map((item) => (
-          <div className='space-y-3 border'>
+          <div className='space-y-3 border' key={item.dishName}>
             <Image
               src={useNextSanityImage(client, item.image)}
               className="w-full h-64 object-cover" alt={item.dishName}

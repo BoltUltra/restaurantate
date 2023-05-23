@@ -17,7 +17,7 @@ const TheStory = () => {
           <Heading3 title={"The Story"} />
           <p className="font-josefin md:text-base text-sm font-light">
             Lorem Ipsum is that it has a more-or-less normal distribution of
-            letters, as opposed to using 'Content here, content gfshere',
+            letters, as opposed to using &apos;Content here, content gfshere',
             makinlook like readable English. Many desktop publishing packages.
           </p>
         </div>

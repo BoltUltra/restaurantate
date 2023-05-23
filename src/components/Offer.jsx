@@ -11,11 +11,11 @@ const Offer = ({ specialOfferData }) => {
       <div className='text-center space-y-3'>
         <SubPageTitle title={'offer'} color={'background'} />
         <Heading3 title={'Our special offers dishes'} />
-        <p className='font-josefin md:text-base text-sm md:font-normal font-light'>Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content making.</p>
+        <p className='font-josefin md:text-base text-sm md:font-normal font-light'>Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using &apos;Content here, content making.</p>
       </div>
       <div className="grid md:grid-cols-2 md:gap-10 gap-5 md:mt-7 mt-4 items-center">
         {specialOfferData.map((item) => (
-          <div className={`${item.dishName === 'Chicken Burger' ? 'bg-[#C6EAF2]' : 'bg-[#D7D7D7]'} p-5 rounded-md`}>
+          <div className={`${item.dishName === 'Chicken Burger' ? 'bg-[#C6EAF2]' : 'bg-[#D7D7D7]'} p-5 rounded-md`} key={item.dishName}>
             <div className='grid grid-cols-2 items-center'>
               <div>
                 <div className='relative'>

@@ -10,11 +10,11 @@ const HomeBlog = ({ blogData }) => {
       <div className='text-center space-y-3'>
         <SubPageTitle title='Blog' color={'background'} />
         <Heading3 title={'Be First Who Read News'} />
-        <p className='font-josefin text-sm'>Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content making.</p>
+        <p className='font-josefin text-sm'>Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using &apos;Content here, content making.</p>
       </div>
       <div className="grid md:grid-cols-2 md:gap-10 gap-5">
         {blogData.slice(0, 2).map((item) => (
-          <div className='border'>
+          <div className='border' key={item.title}>
             <Image
               src={useNextSanityImage(client, item.image)}
               className="w-full h-72 object-cover" alt={item.title}

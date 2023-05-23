@@ -18,7 +18,7 @@ const Menu = ({ startersData, mainDishData, dessertData }) => {
             <Heading3 title={'Try Our Special Offers'} />
             <p className="font-josefin md:text-base text-sm">
               Lorem Ipsum is that it has a more-or-less normal distribution of
-              letters, as opposed to using 'Content here, content making it look
+              letters, as opposed to using &apos;Content here, content making it look
               like readable English.
             </p>
           </div>
@@ -30,7 +30,7 @@ const Menu = ({ startersData, mainDishData, dessertData }) => {
           <div className="space-y-5">
             <Heading3 title={'Starters'} />
             {startersData.map((item) => (
-              <div className="flex items-center space-x-2">
+              <div className="flex items-center space-x-2" key={item.dishName}>
                 <div>
                   <Image
                     src={useNextSanityImage(client, item.image)}
@@ -61,7 +61,7 @@ const Menu = ({ startersData, mainDishData, dessertData }) => {
           <div className="space-y-5">
             <Heading3 title={'Main Dish'} />
             {mainDishData.map((item) => (
-              <div className="flex items-center space-x-2">
+              <div className="flex items-center space-x-2" key={item.dishName}>
                 <div>
                   <Image
                     src={useNextSanityImage(client, item.image)}
@@ -91,7 +91,7 @@ const Menu = ({ startersData, mainDishData, dessertData }) => {
           <div className="space-y-5">
             <Heading3 title={'Dessert'} />
             {dessertData.map((item) => (
-              <div className="flex items-center space-x-2">
+              <div className="flex items-center space-x-2" key={item.dishName}>
                 <div>
                   <Image
                     src={useNextSanityImage(client, item.image)}
