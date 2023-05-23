@@ -15,7 +15,9 @@ const HomeBlog = ({ blogData }) => {
       <div className="grid md:grid-cols-2 md:gap-10 gap-5 mt-5">
         {blogData.slice(0, 2).map((item) =>
         (
-          <BlogPosts item={item} />
+          <div key={item.title}>
+            <BlogPosts item={item} />
+          </div>
         )
 
         )}
@@ -27,7 +29,7 @@ const HomeBlog = ({ blogData }) => {
 const BlogPosts = ({ item }) => {
   const imageSrc = useNextSanityImage(client, item.image)
   return (
-    <div className='border' key={item.title}>
+    <div className='border'>
       <Image
         src={imageSrc}
         className="w-full h-72 object-cover" alt={item.title}
