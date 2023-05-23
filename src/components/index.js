@@ -17,3 +17,6 @@ export { default as HomeBlog } from "./HomeBlog";
 export { default as Heading3 } from "./Heading3";
 export { default as Heading4 } from "./Heading4";
 export { default as Reservation } from "./Reservation";
+export { default as Starters } from "./Starters";
+export { default as MainDish } from "./MainDish";
+export { default as Dessert } from "./Dessert";
