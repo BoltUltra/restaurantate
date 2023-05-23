@@ -33,7 +33,7 @@ function Navbar() {
           Call - +234 906 1858 947
         </div>
         <Link href={"/"}>
-          <Image src={logo} className="md:w-64 w-32 mx-auto" />
+          <Image src={logo} className="md:w-64 w-32 mx-auto" alt="logo" />
         </Link>
         <div className="md:flex hidden items-center space-x-3">
           <AiOutlineShoppingCart className="text-2xl" />
@@ -61,7 +61,7 @@ function Navbar() {
 
       <div className={`${isNavOpen ? "md:hidden block" : "md:hidden hidden"} fixed top-0 h-screen z-10 bg-background w-full p-5 space-y-5`}>
         <Link href={"/"}>
-          <Image src={logo} className="md:w-64 w-32" />
+          <Image src={logo} className="md:w-64 w-32" alt="logo" />
         </Link>
         <div className="flex flex-col space-y-5">
           {navlinks.map((link, index) => (

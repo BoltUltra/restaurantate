@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.swiperWrapper {
+  @apply py-20;
+}
+
+.swiper-pagination-bullet {
+  background: #797e89 !important;
+}
+.swiper-pagination-bullet-active {
+  background: #fff !important;
+}
+
+.reservation {
+  background: url(/images/homepage_images/reservation-bg.webp);
+  background-size: cover;
+}

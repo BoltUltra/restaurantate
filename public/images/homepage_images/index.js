@@ -1,1 +1,9 @@
 export { default as logo } from "./nav-logo.webp";
+export { default as homeStoryImage } from "./home-story-img.webp";
+export { default as homeSignature } from "./home-signature.svg";
+export { default as homeSpecialOffers } from "./home-special-offers.webp";
+export { default as offerLine } from "./offer-line.webp";
+export { default as testimonialQuote } from "./testimonialQuote.svg";
+export { default as homeSubHero } from "./home-sub-hero.webp";
+export { default as burgerBG } from "./chicken-burger-price-bg.svg";
+export { default as pizzaBG } from "./chicken-pizza-price-bg.svg";

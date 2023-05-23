@@ -11,15 +11,15 @@ import Link from "next/link";
 
 function Footer() {
   return (
-   <footer className="bg-background font-josefin text-[#dfdfdf]">
+    <footer className="bg-background font-josefin text-[#dfdfdf]">
       <div className="flex md:flex-row flex-col md:space-y-0 space-y-5 items-center justify-between md:py-10 py-5 md:px-40 px-5">
         <div className="underline md:order-first order-last md:mt-0 mt-5">
-         <Link href={'https://twitter.com/dami0la'}>Twitter Feed</Link> 
+          <Link href={'https://twitter.com/dami0la'}>Twitter Feed</Link>
         </div>
         <Link href={"/"}>
-          <Image src={logo} className="md:w-64 w-32 mx-auto" />
+          <Image src={logo} className="md:w-64 w-32 mx-auto" alt="Logo" />
         </Link>
-          <div className="flex items-center space-x-5">
+        <div className="flex items-center space-x-5">
           <AiOutlineInstagram />
           <BsFacebook />
           <AiOutlineTwitter />
@@ -30,9 +30,9 @@ function Footer() {
         <div className="md:text-left text-center space-y-5">
           <span className="uppercase border-y border-y-primary tracking-widest py-1">contact</span>
           <div>
-           <p>5 Rue Dalou, 75015 Paris</p> 
-           <p><span className="text-primary">Call</span> - +234 906 1858 947</p> 
-           <p className="text-primary"><a href="mailto:mayowa77@yahoo.com">mayowa77@yahoo.com</a></p> 
+            <p>5 Rue Dalou, 75015 Paris</p>
+            <p><span className="text-primary">Call</span> - +234 906 1858 947</p>
+            <p className="text-primary"><a href="mailto:mayowa77@yahoo.com">mayowa77@yahoo.com</a></p>
           </div>
         </div>
         <div className="text-center space-y-3">
@@ -48,14 +48,14 @@ function Footer() {
         <div className="md:text-right text-center space-y-5">
           <span className="uppercase border-y border-y-primary tracking-widest py-1">working hours</span>
           <div>
-           <p><span className="text-primary">Mon - Fri:</span> 7.00am - 6.00pm</p>  
-           <p><span className="text-primary">Sat:</span> 7.00am - 6.00pm</p>  
-           <p><span className="text-primary">Sun:</span> 8.00am - 6.00pm</p>  
+            <p><span className="text-primary">Mon - Fri:</span> 7.00am - 6.00pm</p>
+            <p><span className="text-primary">Sat:</span> 7.00am - 6.00pm</p>
+            <p><span className="text-primary">Sun:</span> 8.00am - 6.00pm</p>
           </div>
         </div>
       </div>
       <div className="border-t text-center py-3">
-        <p> &copy; Copyright - <a href="https://mayowasunusi.live" className="text-primary underline underline-offset-4">Mayowa Sunusi</a> | 2023 </p>
+        <p> &copy; Copyright - <a href="https://mayowasunusi.live" target="_blank" className="text-primary underline underline-offset-4">Mayowa Sunusi</a> | 2023 </p>
       </div>
     </footer>
   );
