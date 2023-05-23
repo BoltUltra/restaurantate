@@ -48,34 +48,38 @@ const Testimonials = ({ testimonialData }) => {
           modules={[Pagination]}
           className="mySwiper py-20"
         >
-          {testimonialData.map((item) => {
-            const imageSrc = useNextSanityImage(client, item.image)
-            return (
-              <SwiperSlide className="bg-[#343942] text-white py-10 my-10 px-5 shadow">
-                <div className="flex items-center space-x-3 border-b border-b-[#797E89] py-3" key={item.name}>
-                  <div className="relative">
-                    <Image
-                      src={imageSrc}
-                      className="h-14 w-14 rounded-full object-cover object-top" alt={item.name}
-                    />
-                    <Image src={testimonialQuote} className="absolute top-0 w-5" alt="quotation mark" />
-                  </div>
-                  <div>
-                    <Heading4 title={item.name} />
-                    <p className='font-josefin text-primary text-sm'>{item.city}</p>
-                  </div>
-                </div>
-                <div>
-                  <p className="italic py-3">{item.testimonial}</p>
-                </div>
-              </SwiperSlide>
-            )
-
-          })}
+          {testimonialData.map((item) => (
+            <TestimonialSlide key={item.name} item={item} />
+          ))}
 
         </Swiper>
       </div>
     </section>
+  );
+};
+
+const TestimonialSlide = ({ item }) => {
+  const imageSrc = useNextSanityImage(client, item.image);
+
+  return (
+    <SwiperSlide className="bg-[#343942] text-white py-10 my-10 px-5 shadow">
+      <div className="flex items-center space-x-3 border-b border-b-[#797E89] py-3" key={item.name}>
+        <div className="relative">
+          <Image
+            src={imageSrc}
+            className="h-14 w-14 rounded-full object-cover object-top" alt={item.name}
+          />
+          <Image src={testimonialQuote} className="absolute top-0 w-5" alt="quotation mark" />
+        </div>
+        <div>
+          <Heading4 title={item.name} />
+          <p className='font-josefin text-primary text-sm'>{item.city}</p>
+        </div>
+      </div>
+      <div>
+        <p className="italic py-3">{item.testimonial}</p>
+      </div>
+    </SwiperSlide>
   );
 };
 
