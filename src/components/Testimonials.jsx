@@ -50,7 +50,7 @@ const Testimonials = ({ testimonialData }) => {
         >
           {testimonialData.map((item) => (
             <SwiperSlide>
-              <div key={item.title}>
+              <div key={item.name}>
                 <TestimonialSlide item={item} />
               </div>
             </SwiperSlide>
