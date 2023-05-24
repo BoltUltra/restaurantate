@@ -1,9 +1,9 @@
 import PageTitle from "@component/components/PageTitle";
 
-export default function() {
+export default function About() {
   return (
     <>
-      <PageTitle title={'About'}/>
+      <PageTitle title={"About"} />
     </>
   );
 }
