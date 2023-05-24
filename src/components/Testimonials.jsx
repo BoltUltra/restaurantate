@@ -6,7 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Heading3, Heading4, SubPageTitle } from ".";
+import { Heading3, Heading4, SubPageTitle, ImageComponent } from ".";
 import { testimonialQuote } from "../../public/images/homepage_images";
 
 const Testimonials = ({ testimonialData }) => {
@@ -49,9 +49,24 @@ const Testimonials = ({ testimonialData }) => {
           className="mySwiper py-20"
         >
           {testimonialData.map((item) => (
-            <SwiperSlide>
-              <div key={item.name}>
-                <TestimonialSlide item={item} />
+            // <SwiperSlide>
+            //   <div key={item.name}>
+            //     <TestimonialSlide item={item} />
+            //   </div>
+            // </SwiperSlide>
+            <SwiperSlide className="bg-[#343942] text-white py-10 my-10 px-5 shadow" key={item.name}>
+              <div className="flex items-center space-x-3 border-b border-b-[#797E89] py-3" key={item.name}>
+                <div className="relative">
+                  <ImageComponent item={item} className="h-20 w-20 rounded-full object-cover" alt={item.dishName} />
+                  <Image src={testimonialQuote} className="absolute top-0 w-5" alt="quotation mark" />
+                </div>
+                <div>
+                  <Heading4 title={item.name} />
+                  <p className='font-josefin text-primary text-sm'>{item.city}</p>
+                </div>
+              </div>
+              <div>
+                <p className="italic py-3">{item.testimonial}</p>
               </div>
             </SwiperSlide>
           ))}

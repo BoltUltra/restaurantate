@@ -20,3 +20,4 @@ export { default as Reservation } from "./Reservation";
 export { default as Starters } from "./Starters";
 export { default as MainDish } from "./MainDish";
 export { default as Dessert } from "./Dessert";
+export { default as ImageComponent } from "./ImageComponent";

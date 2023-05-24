@@ -6,7 +6,7 @@ import {
   homeSpecialOffers,
   offerLine,
 } from "../../public/images/homepage_images";
-import { Dessert, Heading3, Heading4, MainDish, SecondaryButton, Starters, SubPageTitle } from "./";
+import { Dessert, Heading3, Heading4, MainDish, SecondaryButton, Starters, SubPageTitle, ImageComponent } from "./";
 
 const Menu = ({ startersData, mainDishData, dessertData }) => {
   return (
@@ -30,109 +30,104 @@ const Menu = ({ startersData, mainDishData, dessertData }) => {
           <div className="space-y-5">
             <Heading3 title={'Starters'} />
             {startersData.map((item) => {
-              <div key={item.dishName}>
-                <Starters item={item} />
-              </div>
+              // <div key={item.dishName}>
+              //   <Starters item={item} />
+              // </div>
               // const imageSrc = useNextSanityImage(client, item.image)
-              // return (
-              //   <div className="flex items-center space-x-2" key={item.dishName}>
-              //     <div>
-              //       <Image
-              //         src={imageSrc}
-              //         className="h-20 w-20 rounded-full object-cover"
-              //         alt={item.dishName}
-              //       />
-              //     </div>
-              //     <div>
-              //       <div>
-              //         <Heading4 title={item.dishName} />
-              //         <div className="flex md:items-center md:space-x-3">
-              //           <p className="font-josefin md:text-base text-sm w-full text-[#555555]">
-              //             {item.dishContent}
-              //           </p>
-              //           <div className="md:block hidden">
-              //             <Image src={offerLine} alt="line" />
-              //           </div>
-              //           <p className="font-bold md:text-3xl text-2xl font-garamond">
-              //             {item.dishPrice}
-              //           </p>
-              //         </div>
-              //       </div>
-              //     </div>
-              //   </div>
-              // )
+              return (
+                <div className="flex items-center space-x-2" key={item.dishName}>
+                  <div>
+                    <ImageComponent item={item} className="h-20 w-20 rounded-full object-cover" alt={item.dishName} />
+                    {/* <Image
+                      src={imageSrc}
+                      className="h-20 w-20 rounded-full object-cover"
+                      alt={item.dishName}
+                    /> */}
+                  </div>
+                  <div>
+                    <div>
+                      <Heading4 title={item.dishName} />
+                      <div className="flex md:items-center md:space-x-3">
+                        <p className="font-josefin md:text-base text-sm w-full text-[#555555]">
+                          {item.dishContent}
+                        </p>
+                        <div className="md:block hidden">
+                          <Image src={offerLine} alt="line" />
+                        </div>
+                        <p className="font-bold md:text-3xl text-2xl font-garamond">
+                          {item.dishPrice}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )
             })}
           </div>
           {/* Main Dish */}
           <div className="space-y-5">
             <Heading3 title={'Main Dish'} />
             {mainDishData.map((item) => {
-              <div key={item.dishName}>
-                <MainDish item={item} />
-              </div>
+              // <div key={item.dishName}>
+              //   <MainDish item={item} />
+              // </div>
               // const imageSrc = useNextSanityImage(client, item.image)
-              // return (
-              //   <div className="flex items-center space-x-2" key={item.dishName}>
-              //     <div>
-              //       <Image
-              //         src={imageSrc}
-              //         className="h-20 w-20 rounded-full object-cover" alt={item.dishName}
-              //       />
-              //     </div>
-              //     <div>
-              //       <div>
-              //         <Heading4 title={item.dishName} />
-              //         <div className="flex md:items-center md:space-x-3">
-              //           <p className="font-josefin md:text-base text-sm w-full text-[#555555]">
-              //             {item.dishContent}
-              //           </p>
-              //           <div className="md:block hidden">
-              //             <Image src={offerLine} alt="line" />
-              //           </div>
-              //           <p className="font-bold md:text-3xl text-2xl font-garamond">
-              //             {item.dishPrice}
-              //           </p>
-              //         </div>
-              //       </div>
-              //     </div>
-              //   </div>
-              // )
+              return (
+                <div className="flex items-center space-x-2" key={item.dishName}>
+                  <div>
+                    <ImageComponent item={item} className="h-20 w-20 rounded-full object-cover" alt={item.dishName} />
+                  </div>
+                  <div>
+                    <div>
+                      <Heading4 title={item.dishName} />
+                      <div className="flex md:items-center md:space-x-3">
+                        <p className="font-josefin md:text-base text-sm w-full text-[#555555]">
+                          {item.dishContent}
+                        </p>
+                        <div className="md:block hidden">
+                          <Image src={offerLine} alt="line" />
+                        </div>
+                        <p className="font-bold md:text-3xl text-2xl font-garamond">
+                          {item.dishPrice}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )
             })}
           </div>
           {/* Dessert */}
           <div className="space-y-5">
             <Heading3 title={'Dessert'} />
             {dessertData.map((item) => {
-              <div key={item.dishName}>
-                <Dessert item={item} />
-              </div>
+              // <div key={item.dishName}>
+              //   <Dessert item={item} />
+              // </div>
               // const imageSrc = useNextSanityImage(client, item.image)
-              // return (
-              //   <div className="flex items-center space-x-2" key={item.dishName}>
-              //     <div>
-              //       <Image
-              //         src={imageSrc}
-              //         className="h-20 w-20 rounded-full object-cover" alt={item.dishName}
-              //       />
-              //     </div>
-              //     <div>
-              //       <div>
-              //         <Heading4 title={item.dishName} />
-              //         <div className="flex md:items-center md:space-x-3">
-              //           <p className="font-josefin md:text-base text-sm w-full text-[#555555]">
-              //             {item.dishContent}
-              //           </p>
-              //           <div className="md:block hidden">
-              //             <Image src={offerLine} alt="line" />
-              //           </div>
-              //           <p className="font-bold md:text-3xl text-2xl font-garamond">
-              //             {item.dishPrice}
-              //           </p>
-              //         </div>
-              //       </div>
-              //     </div>
-              //   </div>
-              // )
+              return (
+                <div className="flex items-center space-x-2" key={item.dishName}>
+                  <div>
+                    <ImageComponent item={item} className="h-20 w-20 rounded-full object-cover" alt={item.dishName} />
+                  </div>
+                  <div>
+                    <div>
+                      <Heading4 title={item.dishName} />
+                      <div className="flex md:items-center md:space-x-3">
+                        <p className="font-josefin md:text-base text-sm w-full text-[#555555]">
+                          {item.dishContent}
+                        </p>
+                        <div className="md:block hidden">
+                          <Image src={offerLine} alt="line" />
+                        </div>
+                        <p className="font-bold md:text-3xl text-2xl font-garamond">
+                          {item.dishPrice}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )
             })}
           </div>
         </div>
