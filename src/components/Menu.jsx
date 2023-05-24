@@ -30,19 +30,10 @@ const Menu = ({ startersData, mainDishData, dessertData }) => {
           <div className="space-y-5">
             <Heading3 title={'Starters'} />
             {startersData.map((item) => {
-              // <div key={item.dishName}>
-              //   <Starters item={item} />
-              // </div>
-              // const imageSrc = useNextSanityImage(client, item.image)
               return (
                 <div className="flex items-center space-x-2" key={item.dishName}>
                   <div>
                     <ImageComponent item={item} className="h-20 w-20 rounded-full object-cover" alt={item.dishName} />
-                    {/* <Image
-                      src={imageSrc}
-                      className="h-20 w-20 rounded-full object-cover"
-                      alt={item.dishName}
-                    /> */}
                   </div>
                   <div>
                     <div>
@@ -68,10 +59,6 @@ const Menu = ({ startersData, mainDishData, dessertData }) => {
           <div className="space-y-5">
             <Heading3 title={'Main Dish'} />
             {mainDishData.map((item) => {
-              // <div key={item.dishName}>
-              //   <MainDish item={item} />
-              // </div>
-              // const imageSrc = useNextSanityImage(client, item.image)
               return (
                 <div className="flex items-center space-x-2" key={item.dishName}>
                   <div>
@@ -101,10 +88,6 @@ const Menu = ({ startersData, mainDishData, dessertData }) => {
           <div className="space-y-5">
             <Heading3 title={'Dessert'} />
             {dessertData.map((item) => {
-              // <div key={item.dishName}>
-              //   <Dessert item={item} />
-              // </div>
-              // const imageSrc = useNextSanityImage(client, item.image)
               return (
                 <div className="flex items-center space-x-2" key={item.dishName}>
                   <div>
