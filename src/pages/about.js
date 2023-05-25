@@ -1,4 +1,11 @@
-import { AboutHero, Counts, Team, Testimonials, AboutGallery } from "@component/components";
+import {
+  AboutHero,
+  Counts,
+  Team,
+  Testimonials,
+  AboutGallery,
+  Reservation,
+} from "@component/components";
 import PageTitle from "@component/components/PageTitle";
 import { client } from "../../lib/client";
 
@@ -10,7 +17,8 @@ export default function About({ chefsData, testimonialData, galleryData }) {
       <Counts />
       <Team chefsData={chefsData} />
       <Testimonials testimonialData={testimonialData} />
-      <AboutGallery galleryData={galleryData}/>
+      <AboutGallery galleryData={galleryData} />
+      <Reservation />
     </>
   );
 }
@@ -22,7 +30,9 @@ export const getServerSideProps = async () => {
 
   return {
     props: {
-      chefsData, testimonialData, galleryData
+      chefsData,
+      testimonialData,
+      galleryData,
     },
   };
 };
