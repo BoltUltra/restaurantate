@@ -13,7 +13,7 @@ const AboutHero = () => {
           <div className='space-y-3'>
             <SubPageTitle title={'About us'} />
             <Heading3 title={'Quality and Tradition'} />
-            <p className='font-josefin md:text-base text-sm'>Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content gfshere making look like readable English. Many desktop publishing packages.</p>
+            <p className='font-josefin md:text-base text-sm'>Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using &apos;Content here, content gfshere making look like readable English. Many desktop publishing packages.</p>
           </div>
           <div className='text-left font-josefin space-y-2'>
             <p className='uppercase md:text-base text-sm'>Josefine</p>
