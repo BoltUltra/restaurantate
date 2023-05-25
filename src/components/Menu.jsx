@@ -6,34 +6,54 @@ import {
   homeSpecialOffers,
   offerLine,
 } from "../../public/images/homepage_images";
-import { Dessert, Heading3, Heading4, MainDish, SecondaryButton, Starters, SubPageTitle, ImageComponent } from "./";
+import {
+  Dessert,
+  Heading3,
+  Heading4,
+  MainDish,
+  SecondaryButton,
+  Starters,
+  SubPageTitle,
+  ImageComponent,
+} from "./";
 
 const Menu = ({ startersData, mainDishData, dessertData }) => {
   return (
     <section className="md:px-40 px-5 md:py-20 py-10">
-      <SubPageTitle title={"Menu"} color={'background'} />
+      <SubPageTitle title={"Menu"} color={"background"} />
       <div className="grid md:grid-cols-3 md:gap-10 gap-5">
         <div className="space-y-5">
           <div className="space-y-3">
-            <Heading3 title={'Try Our Special Offers'} />
+            <Heading3 title={"Try Our Special Offers"} />
             <p className="font-josefin md:text-base text-sm">
               Lorem Ipsum is that it has a more-or-less normal distribution of
-              letters, as opposed to using &apos;Content here, content making it look
-              like readable English.
+              letters, as opposed to using &apos;Content here, content making it
+              look like readable English.
             </p>
           </div>
           <Image src={homeSpecialOffers} alt="Special Offer" />
-          <SecondaryButton link={"/"} title={'See all dishes'} color={'primary font-josefin'} />
+          <SecondaryButton
+            link={"/"}
+            title={"See all dishes"}
+            color={"primary font-josefin"}
+          />
         </div>
         <div className="md:col-span-2 space-y-5">
           {/* Starters */}
           <div className="space-y-5">
-            <Heading3 title={'Starters'} />
+            <Heading3 title={"Starters"} />
             {startersData.map((item) => {
               return (
-                <div className="flex items-center space-x-2" key={item.dishName}>
+                <div
+                  className="flex items-center space-x-2"
+                  key={item.dishName}
+                >
                   <div>
-                    <ImageComponent item={item} className="h-20 w-20 rounded-full object-cover" alt={item.dishName} />
+                    <ImageComponent
+                      item={item}
+                      className="h-20 w-20 rounded-full object-cover"
+                      alt={item.dishName}
+                    />
                   </div>
                   <div>
                     <div>
@@ -52,17 +72,24 @@ const Menu = ({ startersData, mainDishData, dessertData }) => {
                     </div>
                   </div>
                 </div>
-              )
+              );
             })}
           </div>
           {/* Main Dish */}
           <div className="space-y-5">
-            <Heading3 title={'Main Dish'} />
+            <Heading3 title={"Main Dish"} />
             {mainDishData.map((item) => {
               return (
-                <div className="flex items-center space-x-2" key={item.dishName}>
+                <div
+                  className="flex items-center space-x-2"
+                  key={item.dishName}
+                >
                   <div>
-                    <ImageComponent item={item} className="h-20 w-20 rounded-full object-cover" alt={item.dishName} />
+                    <ImageComponent
+                      item={item}
+                      className="h-20 w-20 rounded-full object-cover"
+                      alt={item.dishName}
+                    />
                   </div>
                   <div>
                     <div>
@@ -81,17 +108,24 @@ const Menu = ({ startersData, mainDishData, dessertData }) => {
                     </div>
                   </div>
                 </div>
-              )
+              );
             })}
           </div>
           {/* Dessert */}
           <div className="space-y-5">
-            <Heading3 title={'Dessert'} />
-            {dessertData.map((item) => {
+            <Heading3 title={"Dessert"} />
+            {dessertData.slice(0, 2).map((item) => {
               return (
-                <div className="flex items-center space-x-2" key={item.dishName}>
+                <div
+                  className="flex items-center space-x-2"
+                  key={item.dishName}
+                >
                   <div>
-                    <ImageComponent item={item} className="h-20 w-20 rounded-full object-cover" alt={item.dishName} />
+                    <ImageComponent
+                      item={item}
+                      className="h-20 w-20 rounded-full object-cover"
+                      alt={item.dishName}
+                    />
                   </div>
                   <div>
                     <div>
@@ -110,7 +144,7 @@ const Menu = ({ startersData, mainDishData, dessertData }) => {
                     </div>
                   </div>
                 </div>
-              )
+              );
             })}
           </div>
         </div>

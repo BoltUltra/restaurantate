@@ -24,3 +24,14 @@
   background-size: cover;
   background-position: center;
 }
+
+.menuSubHero{
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/images/menu_images/menu-sub-hero.webp);
+  background-size: cover;
+  /*background-position: center;*/
+}
+.menuSubHero2{
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/images/menu_images/menu-sub-hero2.webp);
+  background-size: cover;
+  background-position: center;
+}
