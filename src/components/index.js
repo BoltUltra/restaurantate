@@ -22,3 +22,7 @@ export { default as MainDish } from "./MainDish";
 export { default as Dessert } from "./Dessert";
 export { default as ImageComponent } from "./ImageComponent";
 export { default as Layout } from "./Layout";
+export { default as AboutHero } from "./AboutHero";
+export { default as Counts } from "./Counts";
+export { default as Team } from "./Team";
+export { default as AboutGallery } from "./AboutGallery";
