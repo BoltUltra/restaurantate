@@ -26,3 +26,8 @@ export { default as AboutHero } from "./AboutHero";
 export { default as Counts } from "./Counts";
 export { default as Team } from "./Team";
 export { default as AboutGallery } from "./AboutGallery";
+export { default as MenuStarter } from "./MenuStarter";
+export { default as MenuMain } from "./MenuMain";
+export { default as MenuDessert } from "./MenuDessert";
+export { default as MenuSubHero } from "./MenuSubHero";
+export { default as MenuSubHero2 } from "./MenuSubHero2";

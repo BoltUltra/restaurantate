@@ -1,7 +1,5 @@
 import React, { useRef, useState } from "react";
 import Image from "next/image";
-import { client } from "../../lib/client";
-import { useNextSanityImage } from "next-sanity-image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper";
 import "swiper/css";
