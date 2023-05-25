@@ -9,11 +9,18 @@
 .swiper-pagination-bullet {
   background: #797e89 !important;
 }
+
 .swiper-pagination-bullet-active {
-  background: #fff !important;
+  background: #E1B168 !important;
 }
 
 .reservation {
   background: url(/images/homepage_images/reservation-bg.webp);
   background-size: cover;
+}
+
+.counts {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/about_images/about_counts.webp);
+  background-size: cover;
+  background-position: center;
 }
