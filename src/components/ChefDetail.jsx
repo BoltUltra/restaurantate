@@ -38,10 +38,7 @@ const ChefDetail = () => {
 
     fetchData();
   }, [router.query.id]);
-
-  if (!chef) {
-    return <div>Loading...</div>;
-  } else {
+  if (chef) {
     return (
       <>
         <PageTitle title={chef.name} />
