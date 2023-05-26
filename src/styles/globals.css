@@ -35,3 +35,11 @@
   background-size: cover;
   background-position: center;
 }
+
+.section-spacing{
+  @apply md:px-40 px-5 md:py-20 py-10;
+}
+
+.booking-input{
+  @apply border border-black w-full outline-gray-500 p-3
+}
