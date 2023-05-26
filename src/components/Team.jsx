@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import Image from "next/image";
 import { client } from "../../lib/client";
 import { useNextSanityImage } from "next-sanity-image";
@@ -6,14 +6,20 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Heading3, Heading4, ImageComponent, SubPageTitle, SecondaryButton } from '.'
+import {
+  Heading3,
+  Heading4,
+  ImageComponent,
+  SubPageTitle,
+  SecondaryButton,
+} from ".";
 
 const Team = ({ chefsData }) => {
   return (
-    <section className='md:px-40 px-5 md:py-20 py-10'>
+    <section className="md:px-40 px-5 md:py-20 py-10">
       <div className="text-center space-y-3">
-        <SubPageTitle title={'team'} />
-        <Heading3 title={'Meet Our Professional Chefs'} />
+        <SubPageTitle title={"team"} />
+        <Heading3 title={"Meet Our Professional Chefs"} />
       </div>
       <div>
         <Swiper
@@ -46,23 +52,31 @@ const Team = ({ chefsData }) => {
           {chefsData.slice(0, 4).map((item) => (
             <SwiperSlide className="" key={item.name}>
               <div className="" key={item.name}>
-                <ImageComponent item={item} className="bg-[#A0AEAF] h-64 w-full object-cover object-top px-2 pt-5" alt={item.slug.current} />
-                <div className='text-center'>
+                <ImageComponent
+                  item={item}
+                  className="bg-[#A0AEAF] h-64 w-full object-cover object-top px-2 pt-5"
+                  alt={item.slug.current}
+                />
+                <div className="text-center">
                   <Heading4 title={item.name} />
-                  <p className='font-josefin text-primary text-sm'>{item.role}</p>
+                  <p className="font-josefin text-primary text-sm">
+                    {item.role}
+                  </p>
                 </div>
               </div>
             </SwiperSlide>
           ))}
-
         </Swiper>
-           <div className='flex items-center justify-center mt-5'>
-                  <SecondaryButton title='See all Chefs' link={'/'} color={'primary font-josefin'} />
-                </div>
+        <div className="flex items-center justify-center mt-5">
+          <SecondaryButton
+            title="See all Chefs"
+            link={"/chefs"}
+            color={"primary font-josefin"}
+          />
+        </div>
       </div>
-
     </section>
-  )
-}
+  );
+};
 
-export default Team
+export default Team;
