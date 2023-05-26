@@ -33,3 +33,4 @@ export { default as MenuSubHero } from "./MenuSubHero";
 export { default as MenuSubHero2 } from "./MenuSubHero2";
 export { default as ChefsTeam } from "./ChefsTeam";
 export { default as BestChefs } from "./BestChefs";
+export { default as ChefDetail } from "./ChefDetail";
