@@ -9,16 +9,16 @@ import Link from "next/link";
 import { fetchChefs } from "@component/lib/fetchChefs";
 
 const ChefsTeam = ({ chefsData }) => {
-  const [chefs, setChefs] = useState([]);
-
-  useEffect(() => {
-    async function fetchData() {
-      const fetchedChefs = await fetchChefs();
-      setChefs(fetchedChefs);
-    }
-
-    fetchData();
-  }, []);
+  // const [chefs, setChefs] = useState([]);
+  //
+  // useEffect(() => {
+  //   async function fetchData() {
+  //     const fetchedChefs = await fetchChefs();
+  //     setChefs(fetchedChefs);
+  //   }
+  //
+  //   fetchData();
+  // }, []);
   return (
     <section className="md:px-40 px-5 md:py-20 py-10">
       <div className="text-center space-y-3">
@@ -27,7 +27,7 @@ const ChefsTeam = ({ chefsData }) => {
       </div>
       <div>
         <div className="md:py-5 py-10 grid md:grid-cols-3 gap-10">
-          {chefs.map((item) => (
+          {chefsData.map((item) => (
             <div className="" key={item._id}>
               <Link href={`/chefs/${item._id}`}>
                 <ImageComponent
