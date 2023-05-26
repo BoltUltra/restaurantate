@@ -27,7 +27,7 @@ const ChefDetail = () => {
     async function fetchData() {
       const chefs = await fetchChefs();
       const chefId = router.query.id;
-      const selectedChef = chefs.find((chef) => chef._id === chefId);
+      const selectedChef = chefs.find((chef) => chef.slug.current === chefId);
 
       if (selectedChef) {
         setChef(selectedChef);

@@ -28,8 +28,8 @@ const ChefsTeam = ({ chefsData }) => {
       <div>
         <div className="md:py-5 py-10 grid md:grid-cols-3 gap-10">
           {chefsData.map((item) => (
-            <div className="" key={item._id}>
-              <Link href={`/chefs/${item._id}`}>
+            <div className="" key={item.slug.current}>
+              <Link href={`/chefs/${item.slug.current}`}>
                 <ImageComponent
                   item={item}
                   className="bg-[#A0AEAF] h-64 w-full object-cover object-top px-2 pt-5"
