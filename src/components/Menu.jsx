@@ -48,24 +48,23 @@ const Menu = ({ startersData, mainDishData, dessertData }) => {
                   className="flex items-center space-x-2"
                   key={item.dishName}
                 >
-                  <div>
-                    <ImageComponent
-                      item={item}
-                      className="h-20 w-20 rounded-full object-cover"
-                      alt={item.dishName}
-                    />
-                  </div>
+                  <ImageComponent
+                    item={item}
+                    className="md:h-20 md:w-20 w-14 h-14 rounded-full object-cover"
+                    alt={item.dishName}
+                  />
+
                   <div>
                     <div>
                       <Heading4 title={item.dishName} />
                       <div className="flex md:items-center md:space-x-3">
-                        <p className="font-josefin md:text-base text-sm w-full text-[#555555]">
+                        <p className="font-josefin md:text-base text-sm md:w-auto w-full text-[#555555]">
                           {item.dishContent}
                         </p>
                         <div className="md:block hidden">
-                          <Image src={offerLine} alt="line" />
+                          <Image src={offerLine} alt="line" className="w-56" />
                         </div>
-                        <p className="font-bold md:text-3xl text-2xl font-garamond">
+                        <p className="md:text-2xl text-lg md:font-garamond font-josefin text-primary">
                           {item.dishPrice}
                         </p>
                       </div>
@@ -84,24 +83,23 @@ const Menu = ({ startersData, mainDishData, dessertData }) => {
                   className="flex items-center space-x-2"
                   key={item.dishName}
                 >
-                  <div>
-                    <ImageComponent
-                      item={item}
-                      className="h-20 w-20 rounded-full object-cover"
-                      alt={item.dishName}
-                    />
-                  </div>
+                  <ImageComponent
+                    item={item}
+                    className="md:h-20 md:w-20 w-14 h-14 rounded-full object-cover"
+                    alt={item.dishName}
+                  />
+
                   <div>
                     <div>
                       <Heading4 title={item.dishName} />
                       <div className="flex md:items-center md:space-x-3">
-                        <p className="font-josefin md:text-base text-sm w-full text-[#555555]">
+                        <p className="font-josefin md:text-base text-sm md:w-auto w-full text-[#555555]">
                           {item.dishContent}
                         </p>
                         <div className="md:block hidden">
-                          <Image src={offerLine} alt="line" />
+                          <Image src={offerLine} alt="line" className="w-56" />
                         </div>
-                        <p className="font-bold md:text-3xl text-2xl font-garamond">
+                        <p className="md:text-2xl text-lg md:font-garamond font-josefin text-primary">
                           {item.dishPrice}
                         </p>
                       </div>
@@ -120,24 +118,23 @@ const Menu = ({ startersData, mainDishData, dessertData }) => {
                   className="flex items-center space-x-2"
                   key={item.dishName}
                 >
-                  <div>
-                    <ImageComponent
-                      item={item}
-                      className="h-20 w-20 rounded-full object-cover"
-                      alt={item.dishName}
-                    />
-                  </div>
+                  <ImageComponent
+                    item={item}
+                    className="md:h-20 md:w-20 w-14 h-14 rounded-full object-cover"
+                    alt={item.dishName}
+                  />
+
                   <div>
                     <div>
                       <Heading4 title={item.dishName} />
                       <div className="flex md:items-center md:space-x-3">
-                        <p className="font-josefin md:text-base text-sm w-full text-[#555555]">
+                        <p className="font-josefin md:text-base text-sm md:w-auto w-full text-[#555555]">
                           {item.dishContent}
                         </p>
                         <div className="md:block hidden">
-                          <Image src={offerLine} alt="line" />
+                          <Image src={offerLine} alt="line" className="w-56" />
                         </div>
-                        <p className="font-bold md:text-3xl text-2xl font-garamond">
+                        <p className="md:text-2xl text-lg md:font-garamond font-josefin text-primary">
                           {item.dishPrice}
                         </p>
                       </div>

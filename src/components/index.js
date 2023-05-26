@@ -34,3 +34,5 @@ export { default as MenuSubHero2 } from "./MenuSubHero2";
 export { default as ChefsTeam } from "./ChefsTeam";
 export { default as BestChefs } from "./BestChefs";
 export { default as ChefDetail } from "./ChefDetail";
+export { default as ReservationBooking } from "./ReservationBooking";
+export { default as WhyChooseUs } from "./WhyChooseUs";
